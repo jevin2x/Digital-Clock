@@ -12,8 +12,9 @@
         }
         .clock{
            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-           font-size: 30px;
+           font-size: 27px;
            margin-left: 7px;
+           margin-top: 20px;
           
            
     
@@ -100,7 +101,7 @@
         let hours = now.getHours().toString().padStart(2, '0');
         let minutes = now.getMinutes().toString().padStart(2, '0');
         let seconds = now.getSeconds().toString().padStart(2, '0');
-        let ampm = hours >= 12 ? "AM" : "PM";
+        let ampm = hours >= 12 ? "PM" : "AM";
         hours = hours % 12 || 12;
 
         clock.textContent = ` ${hours} : ${minutes} : ${seconds} ${ampm}`; 
